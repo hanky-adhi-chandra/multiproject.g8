@@ -4,7 +4,8 @@ object Dependencies {
   val resolutionRepos = Seq(
     "typesafe repo"   at "http://repo.typesafe.com/typesafe/releases/",
     "glassfish repo"  at "http://download.java.net/maven/glassfish/",
-    "spray repo"      at "http://repo.spray.cc/"
+    "spray repo"      at "http://repo.spray.cc/",
+    "Ansvia repo" at "http://scala.repo.ansvia.com/releases/"
   )
 
   def compile   (deps: ModuleID*): Seq[ModuleID] = deps map (_ % "compile")
