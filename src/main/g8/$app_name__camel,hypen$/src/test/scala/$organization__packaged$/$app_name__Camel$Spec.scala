@@ -1,4 +1,4 @@
-package com.$organization;format="lower"$.$app_name;format="lower,hypen"$
+package $organization$
 
 import org.specs2.mutable._
 
