@@ -9,7 +9,7 @@ object Build extends Build {
 
   	// root
 	lazy val root = Project("root", file("."))
-		.aggregate(examples, $app_name$)
+		.aggregate(examples, $app_name;format="lower"$)
 		.settings(basicSettings: _*)
 		.settings(noPublishing: _*)
 		
@@ -22,7 +22,7 @@ object Build extends Build {
 			runtime(logback)
 		)
 
-	lazy val $app_name$ = Project("$app_name$", file("$app_name;format="lower,hypen"$"))
+	lazy val $app_name;format="lower"$ = Project("$app_name$", file("$app_name;format="lower,hypen"$"))
 		.settings(moduleSettings: _*)
 		.settings(libraryDependencies ++=
 			compile(ansviaCommons) ++
