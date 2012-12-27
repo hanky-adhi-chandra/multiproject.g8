@@ -1,4 +1,4 @@
-package $organization;format="packaged"$
+package $organization$
 
 object $app_name;format="Camel"$ {
 
