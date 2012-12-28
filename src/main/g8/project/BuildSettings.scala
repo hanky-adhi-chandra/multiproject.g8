@@ -8,7 +8,7 @@ object BuildSettings {
   lazy val basicSettings = seq(
     version               := "$version$",
     homepage              := Some(new URL("http://ansvia.com")),
-    organization          := "com.$organization$",
+    organization          := "$organization$",
     organizationHomepage  := Some(new URL("http://ansvia.com")),
     description           := "$description$",
     startYear             := Some(2012),
