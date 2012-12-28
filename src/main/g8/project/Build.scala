@@ -22,7 +22,7 @@ object Build extends Build {
 			runtime(logback)
 		)
 
-	lazy val $app_name;format="camel"$ = Project("$app_name;format="camel,hypen"$", file("$app_name;format="camel,hypen"$"))
+	lazy val $app_name;format="camel"$ = Project("$app_name;format="norm"$", file("$app_name;format="norm"$"))
 		.settings(moduleSettings: _*)
 		.settings(libraryDependencies ++=
 			compile(ansviaCommons) ++
