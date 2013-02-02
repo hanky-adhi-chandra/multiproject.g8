@@ -37,6 +37,34 @@ object BuildSettings {
     publish := (),
     publishLocal := ()
   )
+  
+  lazy val withPublishing = seq(
+      publishTo <<= version { (v:String) =>
+            val ansviaRepo = "http://scala.repo.ansvia.com/nexus"
+            if(v.trim.endsWith("SNAPSHOT"))
+                Some("snapshots" at ansviaRepo + "/content/repositories/snapshots")
+            else
+                Some("releases" at ansviaRepo + "/content/repositories/releases")
+      },
+
+      credentials += Credentials(Path.userHome / ".ivy2" / ".credentials"),
+
+      publishArtifact in Test := false,
+
+      pomIncludeRepository := { _ => false },
+
+      crossPaths := false,
+
+      pomExtra := (
+          <url>http://your.info.url.here</url>
+          <developers>
+            <developer>
+              <id>your id here</id>
+              <name>Your name here</name>
+              <url>http://your.site.here.com</url>
+            </developer>
+          </developers>)
+  )
 
 }
 

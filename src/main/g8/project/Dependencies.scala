@@ -16,5 +16,5 @@ object Dependencies {
 
   val ansviaCommons = "com.ansvia" % "ansvia-commons" % "0.0.2"
   val specs2        = "org.specs2" %%  "specs2" % "1.9"
-  val logback       = "ch.qos.logback" % "logback-classic" % "1.0.0"
+  val logback       = "ch.qos.logback" % "logback-classic" % "1.0.9"
 }
