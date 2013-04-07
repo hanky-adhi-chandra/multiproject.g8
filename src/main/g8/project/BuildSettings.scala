@@ -1,7 +1,7 @@
 import sbt._
 import Keys._
-import com.github.siasia.WebPlugin._
-import ls.Plugin._
+//import com.github.siasia.WebPlugin._
+//import ls.Plugin._
 
 object BuildSettings {
 
@@ -25,12 +25,12 @@ object BuildSettings {
     // publishing
     credentials += Credentials(Path.userHome / ".ivy2" / ".credentials"),
     crossPaths := false,
-    publishMavenStyle := true,
+    publishMavenStyle := true
 
     // LS
-    (LsKeys.tags in LsKeys.lsync) := Seq("http", "server", "client", "async"),
-    (LsKeys.docsUrl in LsKeys.lsync) := Some(new URL("http://spray.github.com/spray/api/spray-can/")),
-    (externalResolvers in LsKeys.lsync) := Seq("spray repo" at "http://repo.spray.cc")
+    // (LsKeys.tags in LsKeys.lsync) := Seq("http", "server", "client", "async"),
+    // (LsKeys.docsUrl in LsKeys.lsync) := Some(new URL("http://spray.github.com/spray/api/spray-can/")),
+    // (externalResolvers in LsKeys.lsync) := Seq("spray repo" at "http://repo.spray.cc")
   )
 
   lazy val noPublishing = seq(
