@@ -1,7 +1,8 @@
 SBT Multi Project template
 =============================
 
-Giter8 Template for build scala multiple project.
+Giter8 Template for build scala multiple project. 
+Included sbt-idea plugin, enabled by default.
 
 Usage
 ------
