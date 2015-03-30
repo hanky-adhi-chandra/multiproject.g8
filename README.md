@@ -10,7 +10,7 @@ Usage
 $ g8 anvie/multiproject
 ```
 
-For Scala 2.11
+For Scala 2.10/2.11
 
 ```
 $ g8 anvie/multiproject -b scala-2.11
