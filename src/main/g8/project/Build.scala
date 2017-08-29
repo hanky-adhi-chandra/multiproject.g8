@@ -19,7 +19,7 @@ object Build extends Build {
 		.settings(libraryDependencies ++= 
 			compile(ansviaCommons) ++
 			test(specs2) ++
-			runtime(logback)
+			runtime(logbackClassic)
 		)
 
 	lazy val $app_name;format="camel"$ = Project("$app_name;format="norm"$", file("$app_name;format="norm"$"))
@@ -27,6 +27,6 @@ object Build extends Build {
 		.settings(libraryDependencies ++=
 			compile(ansviaCommons) ++
 			test(specs2) ++
-			runtime(logback)
+			runtime(logbackClassic)
 		)
 }
